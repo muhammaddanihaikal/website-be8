@@ -47,6 +47,7 @@ form.addEventListener("submit", async (event) => {
       const responseData = await response.json();
       console.log(responseData);
       alert("Berhasil menambahkan artikel!");
+      window.location.href = "http://127.0.0.1:5500/getAllDataArtikel/all.html";
     } catch (error) {
       console.error(error);
       alert("Artikel gagal ditambahkan!");
@@ -72,6 +73,7 @@ form.addEventListener("submit", async (event) => {
       const responseData = await response.json();
       console.log(responseData);
       alert("Berhasil menambahkan artikel!");
+      window.location.href = "http://127.0.0.1:5500/getAllDataArtikel/all.html";
     } catch (error) {
       console.error(error);
       alert("Gagal menambahkan artikel!");

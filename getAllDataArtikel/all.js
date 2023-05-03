@@ -17,6 +17,7 @@ function tampilkanData(data) {
     const judul = item.judul;
     const gambar = item.gambar;
     const artikel = item.artikel;
+    const artikelPotong = artikel.split(" ").splice(0, 50).join(" ");
 
     const li = document.createElement("li");
     const h2 = document.createElement("h2");
@@ -24,7 +25,7 @@ function tampilkanData(data) {
     const img = document.createElement("img");
     img.src = gambar;
     const p = document.createElement("p");
-    p.textContent = artikel;
+    p.textContent = artikelPotong + "...";
 
     // Tambahkan tombol "Selengkapnya" dengan event listener untuk mengirimkan id ke halaman berikutnya
     const selengkapnyaButton = document.createElement("button");

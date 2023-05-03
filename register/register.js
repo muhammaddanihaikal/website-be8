@@ -7,7 +7,7 @@ formRegistrasi.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   // ambil value dari inputan
-  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const retypePassword = document.getElementById("retype-password").value;
 
@@ -20,7 +20,7 @@ formRegistrasi.addEventListener("submit", async (event) => {
   // value dari url tujuan dan data yang akan dikirim
   const url = "https://64508d33a3221969114c7374.mockapi.io/users";
   const data = {
-    username: username,
+    email: email,
     password: password,
   };
 
