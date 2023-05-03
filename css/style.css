@@ -1,0 +1,38 @@
+:root {
+  --pr-color: #04991c;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: aqua;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.button-secondary {
+  width: 125px;
+  height: 40px;
+  background-color: var(--pr-color);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.button-primary {
+  width: 125px;
+  height: 40px;
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+}
