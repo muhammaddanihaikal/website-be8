@@ -13,6 +13,7 @@ async function fetchData() {
 function tampilkanData(data) {
   const daftarArtikel = document.getElementById("daftar-artikel");
   data.forEach((item) => {
+    const id = item.id;
     const judul = item.judul;
     const gambar = item.gambar;
     const artikel = item.artikel;
@@ -25,9 +26,17 @@ function tampilkanData(data) {
     const p = document.createElement("p");
     p.textContent = artikel;
 
+    // Tambahkan tombol "Selengkapnya" dengan event listener untuk mengirimkan id ke halaman berikutnya
+    const selengkapnyaButton = document.createElement("button");
+    selengkapnyaButton.textContent = "Selengkapnya";
+    selengkapnyaButton.addEventListener("click", () => {
+      window.location.href = `http://127.0.0.1:5500/getSingleDataArtikel/single.html?id=${id}`;
+    });
+
     li.appendChild(h2);
     li.appendChild(img);
     li.appendChild(p);
+    li.appendChild(selengkapnyaButton);
 
     daftarArtikel.appendChild(li);
   });
