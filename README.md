@@ -1,1 +1,0 @@
-# Kelompok BE-8
