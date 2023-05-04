@@ -1,6 +1,9 @@
 const registerButton = document.querySelector(".submit");
 registerButton.addEventListener("click", registerUser);
 
+const linkLogin = document.getElementById("linkLogin");
+linkLogin.setAttribute("href", window.location.origin + "/login/login.html");
+
 async function registerUser() {
   const nama = document.getElementById("nama").value;
   const email = document.getElementById("email").value;
