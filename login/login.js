@@ -5,6 +5,7 @@ async function loginUser() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
+  // sd
   // validasi: inputan email dan password
   if (!email || !password) {
     alert("Email dan Password harus diisi!");
