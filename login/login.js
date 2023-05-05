@@ -33,7 +33,7 @@ async function loginUser() {
     }
 
     alert("Anda berhasil login!");
-    window.location.href = window.location.origin + "/artikel/artikel.html";
+    window.location.href = window.location.origin + "/tips/tips.html";
   } catch (error) {
     console.error("Error: " + error);
     alert("Terjadi kesalahan pada server, coba lagi nanti!");

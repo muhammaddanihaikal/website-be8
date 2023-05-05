@@ -26,10 +26,12 @@ async function fetchData() {
 
       const cardText = document.createElement("p");
       cardText.classList.add("card-text");
-      cardText.textContent = artikel.artikel;
+      // cardText.textContent = artikel.artikel;
+      const artikelPreview = artikel.artikel.split(" ").slice(0, 20).join(" ");
+      cardText.textContent = artikelPreview + " . . .";
 
       const cardLink = document.createElement("a");
-      cardLink.href = "#";
+      cardLink.href = `${window.location.origin}/single-tips/single-tips.html?id=${artikel.id}`;
       cardLink.classList.add("btn", "btn-danger");
       cardLink.textContent = "Selengkapnya";
 
